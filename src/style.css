@@ -6,7 +6,8 @@
 
 body {
   padding-top: 80px;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       ellipse at center,
       rgba(127, 0, 173, 0.6) 0%,
       rgba(0, 0, 0, 0.8) 60%,
@@ -47,7 +48,6 @@ body {
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.45);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-
   backdrop-filter: blur(15px);
   padding: 10px;
 }
@@ -71,7 +71,6 @@ body {
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.45);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-
   backdrop-filter: blur(15px);
   padding: 10px;
 }

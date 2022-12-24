@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+body {
+  padding-top: 80px;
+  background: radial-gradient(
+      ellipse at center,
+      rgba(127, 0, 173, 0.6) 0%,
+      rgba(0, 0, 0, 0.8) 60%,
+      rgba(0, 0, 0, 1) 90%
+    ),
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/31787/stars.jpg);
+  z-index: -5;
+  color: white;
+  overflow: hidden;
+  font-family: "Monoton", monospace;
+  /* font-size: 2em; */
+}
+
 .heading-and-body-cont {
   display: flex;
   flex-direction: column;
@@ -11,7 +27,7 @@
 }
 
 .program-title {
-  text-align: left;
+  text-align: center;
   font-size: 3rem;
 }
 
@@ -28,6 +44,13 @@
   flex-direction: column;
   gap: 10vh;
   width: 45%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+  padding: 10px;
 }
 
 .score-heading-and-refreshBtn {
@@ -45,6 +68,13 @@
   flex-direction: column;
   gap: 10vh;
   width: 45%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+  backdrop-filter: blur(15px);
+  padding: 10px;
 }
 
 .input-area {
@@ -56,5 +86,21 @@
 .submit-score {
   display: flex;
   align-self: flex-end;
-  width: 50px;
+}
+
+button {
+  padding: 10px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+input {
+  height: 50px;
+  border: none;
+  border-bottom: 2px black solid;
+  padding: 5px;
+  opacity: 50%;
+  background-color: rgb(226, 43, 122);
+  color: #fff;
+  font-size: large;
 }

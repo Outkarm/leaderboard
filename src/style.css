@@ -7,7 +7,8 @@
 body {
   padding-top: 80px;
   padding-bottom: 80px;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       ellipse at center,
       rgba(127, 0, 173, 0.6) 0%,
       rgba(0, 0, 0, 0.8) 60%,
@@ -40,12 +41,25 @@ body {
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
-      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 30px #e60073,
+      0 0 40px #e60073,
+      0 0 50px #e60073,
+      0 0 60px #e60073,
+      0 0 70px #e60073;
   }
+
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    text-shadow:
+      0 0 20px #fff,
+      0 0 30px #ff4da6,
+      0 0 40px #ff4da6,
+      0 0 50px #ff4da6,
+      0 0 60px #ff4da6,
+      0 0 70px #ff4da6,
+      0 0 80px #ff4da6;
   }
 }
 
@@ -155,6 +169,7 @@ button {
 .player-score {
   text-align: left;
 }
+
 .person-image {
   width: 48px;
   height: 48px;

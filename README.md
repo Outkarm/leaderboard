@@ -25,7 +25,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Todo List Project<a name="about-project"></a>
+# 📖 Leaderboards<a name="about-project"></a>
 
 **Minimalist To Do List Project**
 is a website that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. It is inspired by the minimalist website. That website is already offline but you can still play with thanks to web.archive.org.
@@ -39,7 +39,7 @@ is a website that helps to organize your day. It simply lists the things that yo
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo" href='https://outkarm.github.io/To-Do-List-App/dist/'>Click Here to view</a>
+## 🚀 Live Demo <a name="live-demo" href='https://outkarm.github.io/leaderboard/dist/>Click Here to view</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,7 +85,7 @@ Clone this repository to your desired folder:
 
 - Open the command prompt in the created directory.
 
-- On the terminal run this command git clone https://github.com/Outkarm/To-Do-List-App
+- On the terminal run this command git clone git@github.com:Outkarm/leaderboard.git
 
 - Go to the repository folder using command prompt cd awesome-books-project
 

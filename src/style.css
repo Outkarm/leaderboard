@@ -6,17 +6,15 @@
 
 body {
   padding-top: 80px;
-  background:
-    radial-gradient(
+  padding-bottom: 80px;
+  background: radial-gradient(
       ellipse at center,
       rgba(127, 0, 173, 0.6) 0%,
       rgba(0, 0, 0, 0.8) 60%,
       rgba(0, 0, 0, 1) 90%
     ),
     url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/31787/stars.jpg);
-  z-index: -5;
   color: white;
-  overflow: hidden;
   font-family: "Monoton", monospace;
 }
 
@@ -26,9 +24,29 @@ body {
   gap: 10vh;
 }
 
+.add-title,
+.recent-scores {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
 .program-title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4.5rem;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }
 
 .program-body {
@@ -58,8 +76,34 @@ body {
 }
 
 .scores-container {
-  border: 3px black solid;
+  /* border: 3px black solid; */
   height: 35vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+  height: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .input-area-add-title {
@@ -92,13 +136,64 @@ button {
   border-radius: 25px;
 }
 
+.score-cont {
+  display: flex;
+  padding: 5px;
+  border-radius: 8px;
+  align-items: center;
+  background-color: blueviolet;
+  color: white;
+  gap: 50px;
+  height: 53px;
+}
+
+.player-name {
+  text-align: left;
+  width: 40%;
+}
+
+.player-score {
+  text-align: left;
+}
+.person-image {
+  width: 48px;
+  height: 48px;
+}
+
 input {
   height: 50px;
   border: none;
   border-bottom: 2px black solid;
   padding: 5px;
-  opacity: 50%;
+  opacity: 80%;
   background-color: rgb(226, 43, 122);
   color: #fff;
   font-size: large;
+}
+
+@media only screen and (max-width: 700px) {
+  .program-body {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 50px;
+    align-items: center;
+  }
+
+  .scores-sec-and-refreshBtn {
+    width: 90%;
+  }
+
+  .input-area-add-title {
+    width: 90%;
+  }
+
+  .program-title {
+    font-size: 3rem;
+  }
+
+  .add-title,
+  .recent-scores {
+    font-size: 1.5rem;
+  }
 }

@@ -12,7 +12,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Todo List Project](#-todo-list-project)
+- [📖 Leaderboards project](#-Leaderbords)
   - [🛠️ Built With ](#-built-with-)
   - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
@@ -27,8 +27,7 @@
 
 # 📖 Leaderboards<a name="about-project"></a>
 
-**Minimalist To Do List Project**
-is a website that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. It is inspired by the minimalist website. That website is already offline but you can still play with thanks to web.archive.org.
+This is a web app that keep track of scores of players by saving variouse data in a sever.
 
 ## 🛠️ Built With <a name="built-with"></a>
 

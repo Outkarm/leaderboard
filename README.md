@@ -38,7 +38,7 @@ This is a web app that keep track of scores of players by saving variouse data i
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo" href='https://outkarm.github.io/leaderboard/dist/>Click Here to view</a>
+## 🚀 Live Demo (<a name="live-demo" href='https://outkarm.github.io/leaderboard/dist/>Click Here to view</a>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
